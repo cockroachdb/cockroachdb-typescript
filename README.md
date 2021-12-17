@@ -1,6 +1,6 @@
 # Using CockroachDB with a React + Netlify App
 
-This project was bootstrapped with Create React App. It is a simple game leaderboard that displays a list of player scores and contains an admin component that lets you add new leaderboard entries.
+This project was bootstrapped with Create React App. It is a simple game leaderboard that displays a list of player scores and contains an admin component that lets you add new leaderboard entries. The corresponding blog post is available via [https://www.cockroachlabs.com/blog/react-typescript-cockroachdb-sample-app/](https://www.cockroachlabs.com/blog/react-typescript-cockroachdb-sample-app/)
 
 It uses the Prisma ORM along with Netlify Functions and CockroachDB Serverless to read and write data.
 
