@@ -1,6 +1,8 @@
 generator client {
   provider        = "prisma-client-js"
   previewFeatures = ["cockroachdb"]
+  // The following is needed for netlify
+  binaryTargets = ["native", "rhel-openssl-1.0.x"]
 }
 
 datasource db {
