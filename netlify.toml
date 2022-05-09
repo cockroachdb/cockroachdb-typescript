@@ -1,6 +1,9 @@
 [build]
   command = "npm run build"
-
   functions = "netlify/functions/"
-
   publish = "build/"
+
+[[redirects]]
+  from = "/admin"
+  to = "/index.html"
+  status = 301
