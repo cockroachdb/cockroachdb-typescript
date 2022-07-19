@@ -9,4 +9,6 @@ publish = "build/"
 # or they would return a `404 Not Found` error
 # https://www.netlify.com/blog/2020/04/07/creating-better-more-predictable-redirect-rules-for-spas/
 [[redirects]]
-/*   /index.html   200
+  from = "/*"
+  to = "/index.html"
+  status = 200
