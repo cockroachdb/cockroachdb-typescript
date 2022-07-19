@@ -1,9 +1,12 @@
 [build]
-  command = "npm run build"
-  functions = "netlify/functions/"
-  publish = "build/"
+command = "npm run build"
+functions = "netlify/functions/"
+publish = "build/"
 
+# Since this app is a SPA (Simgle Page Application)
+# Serve all routes the `/index.html`
+# All routes need to go through `/index.html`
+# or they would return a `404 Not Found` error
+# https://www.netlify.com/blog/2020/04/07/creating-better-more-predictable-redirect-rules-for-spas/
 [[redirects]]
-  from = "/admin"
-  to = "/index.html"
-  status = 301
+/*   /index.html   200
